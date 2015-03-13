@@ -1,0 +1,216 @@
+/* ### BEGIN Views Row Pager ### */
+
+.item-list li.pager-ellipsis {
+	display: none;
+}
+
+.item-list ul.pager
+{
+	list-style: none;
+	margin: 5px 0 0 0;
+	text-align: left;
+}
+
+.item-list li
+{
+	margin: 0 1px 0 0; 
+	padding: 0;
+}
+
+.item-list li.pager-current
+{
+	-moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
+	-moz-box-shadow: #fff 0px 1px 0px; -webkit-box-shadow: #fff 0px 1px 0px; box-shadow: #fff 0px 1px 0px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ccc #ddd #eee #ddd;
+	background-color: #888;  
+	margin: 0 1px 0 0; 
+	padding: 4px 9px; 
+	font-size: 0.85em;
+	font-weight: normal;
+	color: #fff;
+}
+
+.item-list ul.pager a
+{
+	-moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
+	-moz-box-shadow: #fff 0px 1px 0px; -webkit-box-shadow: #fff 0px 1px 0px; border: 1px solid transparent;
+	color: #999;
+	padding: 4px 9px; 
+	font-size: 0.85em;
+	font-weight: bold;
+	text-transform: uppercase; 
+}
+
+.item-list ul.pager a:hover {
+	border-color: #ccc #ddd #eee #ddd;  
+	background-color: #5D5B5B;
+	color: #fff;
+}
+
+/* ### BEGIN Date Navigation for Events and Calendar ### */
+
+.date-heading h3 {
+	color: #214971;
+}
+
+.view .date-nav-wrapper {
+	margin: 0;
+}
+
+.view .date-nav-wrapper .date-nav {
+	margin: 0;
+	padding: 0;
+}
+
+.view .date-nav-wrapper li.date-prev,
+.view .date-nav-wrapper li.date-next
+{
+	float: left;
+	border: none;
+	background: transparent;
+/*
+	-moz-box-shadow: #fff 0px 1px 0px; -webkit-box-shadow: #fff 0px 1px 0px; box-shadow: #fff 0px 1px 0px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ccc #ddd #eee #ddd;
+	background-color: #888;  
+	margin: 5px 0;
+	padding: 0;
+	color: #fff;
+*/	
+}
+
+.view .date-nav-wrapper li.date-prev {
+	position: absolute;
+	left: 0;
+	right: auto;
+}
+
+.view .date-nav-wrapper li.date-prev a {
+	-moz-border-radius: 5px 0 0 5px;
+	-webkit-border-radius: 5px 0 0 5px;
+	border-radius: 5px 0 0 5px;
+}
+
+.view .date-nav-wrapper li.date-next a {
+	-moz-border-radius: 0 5px 5px 0;
+	-webkit-border-radius: 0 5px 5px 0;
+	border-radius: 0 5px 5px 0;
+}
+
+.view .date-nav-wrapper li.date-prev,
+.view .date-nav-wrapper li.date-next
+{
+	margin: 0;
+}
+
+.view .date-nav-wrapper li.date-prev a,
+.view .date-nav-wrapper li.date-next a
+{
+	-moz-box-shadow: #fff 0px 1px 0px; -webkit-box-shadow: #fff 0px 1px 0px; box-shadow: #fff 0px 1px 0px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ccc #ddd #eee #ddd;
+	background-color: #888;  
+	color: #fff;
+	float: none; 
+	font-size: 1.0em;	
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 5px 15px; 
+}
+
+.view .date-nav-wrapper li.date-prev a:hover,
+.view .date-nav-wrapper li.date-next a:hover {
+	background-color: #5D5B5B;
+}
+
+/* ### END Date Navigation for Events and Calendar ### */
+
+/* ### BEGIN Slideshow Nav Controls ### */
+
+.views-slideshow-controls-top {
+	height: 0;  
+	position: absolute; 
+	width: 960px;
+}
+
+.views-slideshow-controls-text-previous,
+.views-slideshow-controls-text-next {
+	background-image: url(../images/featured-nav.png);
+	width: 40px;  
+	padding-top: 40px; 
+	height: 0px;  
+	text-indent: -1000px;  
+	overflow: hidden;  
+	outline: none;  
+	position: absolute;   
+	top: 160px;   
+	z-index: 10;
+	display: none; /* only display on hover */
+}
+
+.views-slideshow-controls-text-previous {
+	background-position: left top;
+	left: 0px;
+}
+
+.views-slideshow-controls-text-previous:hover {
+	background-position: left -40px;
+}
+
+.views-slideshow-controls-text-next {
+	background-position: right top;
+	right: 0px;
+}
+
+.views-slideshow-controls-text-next:hover {
+	background-position: right -40px;
+}
+
+.views-slideshow-controls-text-pause {
+	display: none; /* hide pause/resume control */
+}
+
+.view-featured-pages:hover .views-slideshow-controls-text-previous,
+.view-featured-pages:hover .views-slideshow-controls-text-next {
+	display: block;  
+}
+
+/* ### END Slideshow Nav Controls ### */
+
+/* ### BEGIN Slideshow Thumbnail Pager ### */
+
+.view-featured-pages {
+	position: relative;
+}
+
+.views-slideshow-controls-bottom {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+/*
+*/
+	padding-right: 30px;
+	height: 50px; 
+	overflow: hidden;
+	z-index: 20;
+}
+
+.views-slideshow-pager-field-item {
+	float: left; 
+	opacity: 0.5;
+	cursor: pointer;
+	margin-top: -50px;
+}
+
+.views-slideshow-pager-field-item.active,
+.views-slideshow-pager-field-item:hover {
+	opacity: 1;
+	margin: 0;
+}
+
+/* ### END Slideshow Thumbnail Pager ### */

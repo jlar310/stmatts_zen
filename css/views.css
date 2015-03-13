@@ -1,0 +1,314 @@
+/* ### BEGIN Views Row and Grid Styles ### */
+
+.views-row {
+ 	margin-left: 33px;   
+}
+
+.views-row:hover {
+	background: transparent url(../images/row-bg.png) repeat-x 0 center;   
+}
+
+.vr1:hover {
+	background: transparent url(../images/row-icon-go.png) no-repeat right center; 
+	cursor: pointer;
+}
+
+.vr2 {
+	height: 90px;
+}
+
+.block-views .vr2, .pane-block .vr2 {
+	height: 32px;
+	padding: 5px 10px 5px 0;
+}
+
+.vr-left {
+	float: left;
+	margin: 10px 10px 0 -33px;
+	padding: 10px;
+}
+
+.block-views .vr-left, .pane-block .vr-left {
+	margin: 0;
+	padding: 0 5px 0 0;
+}
+
+.views-view-grid .vr-left {
+	margin: 0;
+	padding: 0 5px 0 0;
+}
+
+.vr-center {
+	float: left;
+	padding-top: 25px;
+}
+
+.block-views .vr-center.vr-length-1, .pane-block .vr-center.vr-length-1 {
+	padding-top: 6px;
+}
+
+.block-views .vr-center.vr-length-2, .pane-block .vr-center.vr-length-2 {
+	padding-top: 0px;
+}
+
+.views-view-grid .vr-wrap {
+	margin: 5px 20px 5px 0;
+	height: 32px;
+}
+
+.views-view-grid .vr-wrap:hover {
+	background: #eeeeee url(../images/row-icon-go.png) no-repeat right; 
+	cursor: pointer;
+}
+
+.vr-first {
+	color: #353433;
+	font-size: 150%; 
+	line-height: 1.0;
+	font-weight: bold;
+}
+
+.block-views .vr-first, .pane-block .vr-first {
+	font-size: 100%; 
+	line-height: 1.4;
+}
+
+.vr-first a {
+	color: #353433;
+}
+
+.vr-second {
+	font-size: 85%;
+	color: #515151;
+}
+
+.block-views .vr-second, .pane-block .vr-second {
+	line-height: 1.2;
+}
+
+.vr-square {
+	float: left;
+	height: 46px; 
+	width: 46px;
+	margin-right: 5px;
+}
+
+.block-views .vr-square, .pane-block .vr-square {
+	height: 32px; 
+	width: 32px;
+}
+
+.block-views .vr-square img, .pane-block .vr-square img {
+	margin: 3px;
+	border: 2px solid white;
+	background-clip: border-box;
+	background-origin: padding-box;
+	-moz-box-shadow: -1px 1px 5px #a5a5a5; -webkit-box-shadow: -1px 1px 5px #a5a5a5; box-shadow: -1px 1px 5px #a5a5a5; 
+}
+
+/* ### END Views Row and Grid Styles ### */
+
+/* ### BEGIN Views Slideshow Styles ### */
+
+.views-slideshow-row {
+	margin: 0;
+	padding: 0;
+}
+
+.views-slideshow-row:hover {
+	background: none;
+}
+
+.views-slideshow-row .field-type-image .field-item img {
+	border: none;
+	-moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+}
+
+.views-slideshow-row .views-field-title {
+	color: #353535;
+	font: bold 1.4em Verdana, sans-serif;
+	letter-spacing: -1px;
+	margin: 0;
+	padding-top: 20px;
+	padding-left: 30px;
+	width: 100%;
+}
+
+.views-slideshow-row .views-field-field-subtitle {
+	float: left; 
+	font-size: 0.9em;
+	color: #7C7D7D;
+	line-height: 1.9;
+	padding-left: 30px;
+	padding-right: 5px;
+}
+
+.views-slideshow-row .views-field-field-read-more a {
+	background: #1B344E url(../images/frontpage-button-bg.png) repeat-x left top;	
+	border: 1px solid #2E70AC;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 0.85em;	
+	padding: 2px 8px;
+}
+
+/* ### END Views Slideshow Styles ### */
+
+/* ### BEGIN Event Styles ### */
+
+.vr-square.event-date {
+	background: #656565; 
+	text-align: center;
+	font-weight: bold;
+	text-shadow: #383838 0 -1px 0;
+}
+
+.vr-sdw {
+	color: #cdcccd;	
+	font-size: 0.9em;
+	line-height: 1.0;
+	padding-top: 5px;
+	text-transform: uppercase;
+}
+
+.vr-sdd {
+	color: #fff;
+	padding: 0;
+}
+
+.vr-sdd .date-display-single {
+	font-size: 2em;
+	line-height: 1.0;
+}
+
+.vr-sdd .date-display-start, .vr-sdd .date-display-end {
+	line-height: 2.0;
+}
+
+/* stretch the calendar to full width and hope the right sidebar does not overlap */
+.view-id-events.view-display-id-page .view-footer .view-id-calendar {
+	margin-right: -300px;
+}
+
+/* see above - try to keep the calendar below the sidebar */
+.view-id-events.view-display-id-page .view-content, .view-id-events.view-display-id-page .view-empty {
+	min-height: 390px;
+}
+
+/* ### END Event Styles ### */
+
+/* ### BEGIN Ministry Leader Styles ### */
+
+.view-ministry-leaders td, .view-ministry-leaders th {
+	border: 1px solid #888;
+	padding: 5px;
+}
+
+.view-ministry-leaders td.views-field-title {
+	white-space: nowrap;	
+}
+
+/* ### END Ministry Leader Styles ### */
+
+/* ### BEGIN Exposed Form Sidebar ### */
+
+.views-exposed-widgets .form-item {
+ 	margin: 0;
+}
+ 
+
+.views-exposed-widgets label {
+	color: #939393;
+	display: inline;
+	font-size: 0.9em;
+	text-transform: uppercase;
+}
+
+.views-exposed-widgets .form-type-textfield {
+	padding-bottom: 8px; 
+}
+
+.views-exposed-widgets .form-item .form-text {
+	background: #fff;
+	-moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+	border: 1px solid white;
+	color: #333;
+	padding: 5px 7px; 
+	width: 205px;
+	line-height: 1.6em;
+	-moz-box-shadow: 0px 0px 15px rgba(0,0,0,0.1) inset, 0 1px 1px rgba(0,0,0,0.3) inset, 0px 0px 0px rgba(0,0,0,0.2); 
+	-webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1) inset, 0 1px 1px rgba(0, 0, 0, 0.3) inset, 0px 0px 0px rgba(0, 0, 0, 0.2); 
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1) inset, 0 1px 1px rgba(0, 0, 0, 0.3) inset, 0px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.views-exposed-widgets .description {
+	display: none;
+}
+
+.views-exposed-widgets .form-submit {
+	border-width: 1px;
+	border-style: solid;
+	-moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
+	float: left;
+	margin: 5px 10px 0 0;
+	padding: 2px 10px;
+	line-height: 1.6em;
+	-moz-box-shadow: 0 0 5px #d0d0d0; -webkit-box-shadow: 0 0 5px #d0d0d0; box-shadow: 0 0 5px #d0d0d0;
+}
+
+.views-exposed-widgets .form-submit:hover {
+	border-color: #999 #999 #888;
+	background: #888;
+	color: white;
+}
+
+/* ### END Exposed Form Sidebar ### */
+
+.view-staff-directory .views-row .vr-square img {
+	border-top: 5px solid #656565;
+}
+
+.view-random-quote {
+	padding-bottom: 20px;
+	margin-bottom: 20px; 
+	border-bottom: 1px dotted #dadcdc;
+}
+
+.view-random-quote .view-content {
+	padding-left: 50px;
+	background: url(../images/quote_l.png) no-repeat top left; 
+	min-height: 34px;	
+}
+
+.view-random-quote .view-content .random-quote {
+	background: url(../images/quote_r.png) no-repeat top right; 
+	text-align: center;
+	padding-right: 50px;
+	min-height: 34px;
+}
+
+.view-random-quote ul {
+	list-style: none;
+}
+
+.view-random-quote li {
+	font-size: 1.3em;
+	font-style: italic;
+}	
+
+.view-random-quote .view-footer {
+	margin-top: 10px;
+	font-size: 1.0em;
+	text-align: right;
+}
+
+#block-views-staff_directory-block_1 {
+	margin-top: 30px;
+}
+
+.view-header p {
+	color: #66665C;
+	font-size: 1.1em;
+	line-height: 1.4;
+}

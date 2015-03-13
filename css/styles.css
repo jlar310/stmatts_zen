@@ -1,0 +1,808 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/fixed.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+
+body {
+	background-color: #1B2A3E;
+	background-image: url(../images/container-bg.jpg), url(../images/body-bg.jpg);
+	background-repeat: no-repeat, repeat-x;
+	background-position: center top, center top;
+}
+
+body.toolbar.toolbar-drawer {
+	background-position: center 65px;
+}
+
+#page-title {
+	font-size: 2.2em;
+	letter-spacing: -1px;
+	line-height: 1;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+h2.block-title, h2.pane-title {
+	background: url(../images/block-title-bg.png) no-repeat left 45%;
+	font-size: 1.4em;
+	line-height: 1.55em;
+	color: #214971;
+	letter-spacing: -1px;
+	padding-left: 20px;
+	margin-left: 10px;
+}
+
+h2.pane-title, .panel-display h2.block-title {
+	margin-bottom: 10px;
+}
+
+h5.page-type {
+	color: #aaa;
+	font-size: 1.0em;
+	font-family: 'Gill Sans', Verdana;
+	font-weight: bold;
+	letter-spacing: 2px;
+	line-height: 1.0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+input.form-submit, a.button {
+        background: #ddd url(../images/button.png) repeat-x;
+        border: 1px solid #e4e4e4;
+        border-bottom: 1px solid #b4b4b4;
+        border-left-color: #d2d2d2;
+        border-right-color: #d2d2d2;
+        color: #3a3a3a;
+        cursor: pointer;
+        text-align: center;
+        padding: 1px 7px;
+}
+
+body.toolbar {
+	background-position: center 30px;
+}
+
+#logo {
+	padding: 15px 0px 6px 55px;
+}
+
+.region-header {
+	clear: none; 
+	float: right; 
+}
+
+#main {
+	background: url(../images/main-bg.png);
+}
+
+#main-inner {
+	background: #fff;
+	margin: 0 5px 5px 5px;
+}
+
+#navigation .region-navigation { 
+	margin: 5px 5px 0 5px;
+	background: #365173 url(../images/nav-primary-bg.jpg) no-repeat;
+}
+
+#navigation:after {
+	content: url(../images/logo-branding.png);
+	position: relative;
+	left: 0px;
+	top: -153px;
+	z-index: 500;
+}
+
+#supplemental {
+	margin: 0;
+	position: relative; /* fix for z-index of logo */
+}
+
+.region-supplemental {
+	padding: 10px;
+}
+
+#main #content {
+	padding: 10px 30px 30px 30px;
+	position: relative; /* fix for z-index of logo */
+}
+
+#rss-feed {
+	margin-top: 10px;
+	clear: both;
+}
+
+#highlighted, #footer {
+	margin-top: 20px;  
+	background: url(../images/main-bg.png); 
+	padding: 5px;  
+}
+
+#highlighted .region-highlighted, #footer-inner {
+	background: #fff; 
+	padding: 25px; 
+}
+
+#footer:after {
+	content: url(../images/logo-footer.png);
+	float: right;   
+	position: relative;  
+	top: -22px;  
+	right: 455px; 
+	width: 48px;
+	height: 48px; */
+}
+
+.copyright {
+	font-size: 0.8em;
+	color: #31536e; 
+	margin-top: 3px;
+}
+
+.maintenance-page #logo {
+	float: left;
+}
+
+.maintenance-page #navigation:after {
+	top: -97px;
+}
+
+.maintenance-page #main {
+        padding-top: 0; 
+}
+
+.maintenance-page #content {
+	background-color: #ddd;
+	margin: 5px;
+	padding: 30px;
+}
+
+.maintenance-page #navigation {
+	height: 0px;
+}
+
+/* Clear fix */
+#block-superfish-1:after, 
+.region-supplemental:after, 
+#main-inner:after,  
+#footer-inner:after, 
+div.view-sermons:after,
+div.view-content:after
+{
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+/* ### BEGIN User Menu ### */
+
+#block-menu-block-1 {
+	clear: both;
+	float: right; 
+	margin: 0;
+	overflow: auto;
+}
+
+.menu-name-user-menu .menu li {
+	list-style: none;
+	float: left; 
+	padding: 15px 0 0 15px;
+}
+
+.menu-name-user-menu .menu li a {
+	color: #fff;
+	font-size: 80%;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/* ### END User Menu ### */
+
+/* ### BEGIN Header Icons ### */
+
+#block-block-7 {
+	clear: both;
+	float: right; 
+	margin: 0;
+	padding-top: 15px;
+}
+
+.header-icons  {
+	padding-top: 15px;
+}
+
+.header-icons li {
+	display: block;
+	float: left; 
+	margin-left: 20px;
+	width: 24px;
+	height: 24px;
+}
+
+.header-icons li#header-icon-email {
+	background: url(../images/email_24.png) no-repeat;
+}
+
+.header-icons li#header-icon-fb {
+	background: url(../images/fb_24.png) no-repeat;
+}
+
+.header-icons li#header-icon-blog {
+	background: url(../images/wordpress-blue.png) no-repeat;
+}
+
+/* make the clickable link area the full size of background image */
+.header-icons li a {
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
+/* ### END Header Icons ### */
+
+/* ### BEGIN Main Menu ### */
+
+#block-superfish-1 {
+	padding-left: 30px;
+}
+
+#block-superfish-1 ul.menu {
+	line-height: inherit;
+}
+
+#block-superfish-1 ul.menu li {
+	font-size: 1.2em;
+	list-style: none;
+	text-shadow: #253953 0 -1px 0;
+	text-transform: uppercase;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+#block-superfish-1 li a {
+	color: #fff;
+	display: block;
+	border-style: solid;
+	border-color: transparent;
+	border-left-width: 0;
+	border-top-width: 2px;
+	border-right-width: 0;
+	border-bottom-width: 0;
+	padding: 0 17px;
+}
+
+#block-superfish-1 ul.menu li.sf-depth-1 > ul {
+	padding: 0 2px 2px 2px;
+	background: url(../images/main-bg.png);
+}
+
+#block-superfish-1 li.sf-depth-1 a {
+	line-height: 55px;
+}
+
+#block-superfish-1 li.menuparent a {
+	padding-right: 23px;
+}
+
+#block-superfish-1 .sf-menu li:hover > ul, #block-superfish-1 li.sfHover > ul {
+	top: 55px;
+}
+
+#block-superfish-1 li.sf-depth-2 {
+	background: #365173 url(../images/nav-primary-bg.jpg) no-repeat -100px top;
+}
+
+#block-superfish-1 li.sf-depth-2 a {
+	font-size: 0.75em;
+	line-height: 2.45em;
+}
+
+#block-superfish-1 ul.menu li.first.sf-depth-1 a {
+	font-weight: bold;
+}
+
+#block-superfish-1 li.sf-depth-1.active-trail > a {
+	border-color: #fcb200;
+	color: #f6c126;
+}
+
+#block-superfish-1 li.sf-depth-1 a:hover {
+	border-color: #ffdf18;
+	color: #ffdf18;
+}
+
+#block-superfish-1 a > .sf-sub-indicator {
+	top: 1.45em;
+}
+
+/* ### END Main Menu ### */
+
+/* ### BEGIN Breadcrumbs ### */
+
+.block-breadcrumb {
+	float: left;
+}
+
+#supplemental .breadcrumb {
+	font-size: 0.85em;
+	color: #fba303;
+	padding: 0;
+}
+
+#supplemental .breadcrumb ol {
+	line-height: 1.6em;
+}
+
+#supplemental .breadcrumb a,
+#supplemental .breadcrumb a:visited
+{
+	background: url(../images/crumb.png) no-repeat right center;
+	color: #bb8b43;
+	padding-right: 21px; 
+	margin-right: 1px;
+}
+
+/* ### END Breadcrumbs ### */
+
+/* ### BEGIN Search Form ### */
+
+#block-search-form {
+	float: right;
+}
+
+#block-search-form .container-inline label {
+	display: none;
+}
+
+#block-search-form .form-item,
+#block-search-form .form-actions,
+#block-search-form .form-actions input
+{
+	margin: 0;
+}
+
+#block-search-form .form-item.form-type-textfield {
+	display: block;
+	float: left;
+}
+
+#block-search-form .form-text {
+	background: #EAEFF4;
+	border: 1px solid #CDD5DC;
+	border-right: none;
+	height: 22px;
+	width: 205px;
+}
+
+#block-search-form input.form-text {
+	padding: 2px;
+}
+
+#block-search-form .form-submit {
+	width: 37px;
+	height: 22px;
+	text-indent: -1000px;
+	background: url(../images/search.png) no-repeat;
+	border: none;
+}
+
+#block-search-form .form-submit:hover {
+	background: url(../images/search.png) 0 -22px no-repeat;
+}
+
+/* ### END Search Form ### */
+
+/* ### BEGIN Article Images ### */
+
+.field-item img,
+.block-google-map iframe
+{
+	border: 5px solid white;
+	background-clip: border-box;
+	background-origin: padding-box;
+	box-sizing: content-box;
+	-moz-box-shadow: 0px 1px 8px #a5a5a5; -webkit-box-shadow: 0px 1px 8px #a5a5a5; box-shadow: 0px 1px 8px #a5a5a5;
+}
+
+.field-name-field-main-image img.image-center {
+	display: block;
+	margin: 0 auto 20px;
+}
+
+.field-name-field-main-image img.image-left {
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.field-name-field-main-image img.image-right {
+	float: right;
+	margin: 0 0 20px 20px;
+}
+
+.field-name-field-more-images .field-item img {
+	margin-top: 20px;
+}
+
+.field-name-field-more-images .field-item img.image-left {
+	float: left;
+	margin-right: 20px;
+}
+
+.field-name-field-more-images .field-item img {
+	float: right;
+}
+
+/* ### END Article Images ### */
+
+/* ### BEGIN Right Sidebar menu style ### */
+
+.region-sidebar-second .block {
+	position: relative;
+}
+
+.region-sidebar-second h2.block-title {
+	margin: 15px 0 10px 0;
+}
+
+.region-sidebar-second .menu-block-wrapper,
+.region-sidebar-second .view-content div,
+.region-sidebar-second .node-admin-block,
+.region-sidebar-second .views-exposed-form
+{
+	background-color: #efefef;
+	padding: 20px 25px;
+	margin-bottom: 35px;
+}
+
+.region-sidebar-second .facebook .node-admin-block {
+	padding: 10px;
+}
+
+.region-sidebar-second ul.menu li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	line-height: 1.95em;
+}
+
+.region-sidebar-second .menu-block-wrapper a  {
+	display: block;
+	font-size: 1.2em;
+	text-shadow: #fff 0 1px 0;
+	padding: 3px 0;
+	text-transform: lowercase;
+}
+
+.region-sidebar-second ul.menu a.active,
+.region-sidebar-second ul.menu a.active-trail
+{
+	color: #FBA303;
+	font-weight: bold;
+}
+
+/* ### END Right Sidebar style ### */
+
+/* ### BEGIN Footer ### */
+
+.footer-contact {
+        float: left;
+        font-size: 0.9em;
+}
+
+.footer-contact .name {
+        color: #353433;
+        font-size: 1.5em;
+        font-weight: bold;
+        line-height: 1.2;
+        text-transform: uppercase;
+}
+
+.footer-contact .address {
+        color: #7C7C7C;
+        line-height: 1.2;
+}
+
+.footer-contact .phone {
+        color: #464646;
+}
+
+.footer-contact .contact a {
+        font-weight: bold;
+        text-transform: uppercase;
+}
+
+.footer-links {
+        float: right;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #d9d9d9;
+}
+
+.footer-links ul.menu li {
+        list-style: none;
+        display: inline;
+        margin: 0;
+        padding: 0;
+}
+
+.footer-links ul.menu li.first {
+        margin-left: 0;
+}
+
+.footer-links a {
+        color: #767777;
+        font-weight: bold;
+        display: inline-block;
+        padding: 5px 0 8px 12px;
+}
+
+.footer-links li.first a {
+        padding-left: 0;
+}
+
+.footer-links a.active-trail, .footer-links a.active {
+        color: #ccc;
+}
+
+.footer-social {
+        padding-top: 20px;
+        float: right;
+}
+
+.footer-social ul {
+	list-style-type: none;
+}
+
+.footer-social li {
+        float: left;
+        padding-left: 10px;
+        font-size: 0.8em;
+        color: #ccc;
+        line-height: 1.6;
+        font-weight: bold;
+        text-transform: uppercase;
+        vertical-align: middle;
+}
+
+.footer-social li img {
+        display: block;
+}
+
+/* ### END Footer ### */
+
+/* ### BEGIN Staff Directory Styles ### */
+
+#staff-profile {
+        background: url(../images/staff-bg.jpg) no-repeat 0 0;
+	padding: 30px;
+}
+
+#staff-profile .node-staff {
+        background: url(../images/black-60.png);
+        color: #fff;
+        padding: 30px;
+        width: 75%; 
+        margin: 0 auto;
+}
+
+#staff-profile .node-staff .group-left {
+        margin-right: 20px; 
+        width: auto;
+}
+
+#staff-profile .node-staff .group-right {
+        width: 48%;  
+}
+
+#staff-profile .node-staff .field-name-field-staff-position .field-label {
+        color: #c5c5c5;
+        font-weight: normal;
+        text-transform: uppercase;
+}
+
+.node-type-staff .field-name-field-description {
+        margin-top: 10px;
+}
+
+.node-type-staff #block-views-staff-directory-block-1 {
+        margin-top: 30px;
+}
+
+/* ### END Staff Directory Styles ### */
+
+/* ### BEGIN Field styles ### */
+
+.field-item ul, .field-item ol {
+	padding-left: 40px;
+	padding-bottom: 20px;
+}
+
+.node-sermon .field-name-sermon-date,
+.node-sermon .field-name-field-sermon-preacher,
+.node-sermon .field-name-field-scripture
+ {
+        font-weight: bold;
+        margin-bottom: 20px;
+}
+
+/* ### END Field styles ### */
+
+/* ### BEGIN Calendar Tabs ### */
+
+.page-calendar .page-type,
+.page-calendar #page-title {
+	display: none;
+}
+
+.page-calendar ul.primary {
+	line-height: normal;
+        margin: 5px 5px 20px 5px;  
+        padding: 0 0 10px 13px;; 
+}
+
+.page-calendar ul.primary li {
+	border: none; 
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+        border-right: 1px solid #ccc; 
+	margin: 0;
+        display: inline;  
+        padding: 0 15px;
+}
+
+.page-calendar ul.primary li:last-child {
+        border-right: none;
+}
+
+.page-calendar ul.primary li a {
+        background: none; 
+	color: #000;
+	letter-spacing: normal;
+}
+
+.page-calendar ul.primary li a:hover {
+	color: #007EE4;
+}
+
+.page-calendar ul.primary a {
+        border: 0;
+	margin-right: 0.5em;
+        padding: 0; 
+	line-height: normal;
+}
+
+.page-calendar ul.primary a.active {
+        border-bottom: 4px solid #999; 
+}
+
+/* ### END Calendar Tabs ### */
+
+/* ### BEGIN Calendar ### */
+
+.calendar-calendar div.calendar {
+	font-size: inherit; 
+	line-height: 1.4em
+}
+
+.calendar-calendar tr div.calendar {
+	font-size: 0.9em;
+}
+
+.calendar-calendar .month-view .full .views-field-field-event-short-name a {
+	color: #2d4566;
+}
+
+.calendar-calendar .month-view .full .views-field-field-event-date {
+	color: #555;
+	font-size: 0.9em;   
+	line-height: 1.4em;
+}
+
+/* ### END Calendar ### */
+
+/* ### BEGIN Front Page Styles ### */
+
+.front #main #content {
+	padding: 0 0 30px 0;
+}
+
+.welcome-message {
+        color: #456884;
+        float: left;
+        font-size: 1.2em;
+        letter-spacing: -1px;
+        line-height: 1.2;
+        padding-top: 1px;
+}
+
+/* ### END Front Page Styles ### */
+
+/* ### BEGIN Front Page Highlights ### */
+
+#highlighted h2.pane-title {
+        margin-left: 0;
+}
+
+#highlighted .views-row {
+        margin-left: 0;
+}
+
+#mini-panel-highlights .inside {
+        border-left: 1px dotted #DADCDC;
+        padding-right: 10px;
+        padding-left: 20px;
+        margin: 0;
+}
+
+#mini-panel-highlights .panel-col-first .inside {
+        border-left: none;
+        padding-left: 0;
+}
+
+#mini-panel-highlights .panel-col-last .inside {
+        padding-right: 0;
+}
+
+#mini-panel-highlights .panel-separator {
+        margin-bottom: 20px;
+}
+
+/* ### END Front Page Highlights ### */
+
+.block-google-map .map-footer {
+        font-size: 0.9em;
+}
+
+.block-google-map {
+        margin-top: 20px;
+}
+
+#rss-feed ul {
+	list-style: none;
+}
+
+li.feed-icon, li.feed-text {
+        float: left;
+        font-size: .8em;
+        font-weight: bold;
+        line-height: 1.6;
+        text-transform: uppercase;
+        vertical-align: middle;
+}
+
+li.feed-text {
+        padding-left: 5px;
+        padding-right: 15px;
+}
+
+li.feed-icon img {
+        display: block;
+}
+
+.flowplayer {
+	width: 600px;
+}
+
+
