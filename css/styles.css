@@ -66,15 +66,15 @@ h5.page-type {
 }
 
 input.form-submit, a.button {
-        background: #ddd url(../images/button.png) repeat-x;
-        border: 1px solid #e4e4e4;
-        border-bottom: 1px solid #b4b4b4;
-        border-left-color: #d2d2d2;
-        border-right-color: #d2d2d2;
-        color: #3a3a3a;
-        cursor: pointer;
-        text-align: center;
-        padding: 1px 7px;
+	background: #ddd url(../images/button.png) repeat-x;
+	border: 1px solid #e4e4e4;
+	border-bottom: 1px solid #b4b4b4;
+	border-left-color: #d2d2d2;
+	border-right-color: #d2d2d2;
+	color: #3a3a3a;
+	cursor: pointer;
+	text-align: center;
+	padding: 1px 7px;
 }
 
 body.toolbar {
@@ -144,7 +144,7 @@ body.toolbar {
 
 #footer:after {
 	content: url(../images/logo-footer.png);
-	float: right;   
+	float: right;	
 	position: relative;  
 	top: -22px;  
 	right: 455px; 
@@ -167,7 +167,7 @@ body.toolbar {
 }
 
 .maintenance-page #main {
-        padding-top: 0; 
+	padding-top: 0; 
 }
 
 .maintenance-page #content {
@@ -507,67 +507,67 @@ div.view-content:after
 /* ### BEGIN Footer ### */
 
 .footer-contact {
-        float: left;
-        font-size: 0.9em;
+	float: left;
+	font-size: 0.9em;
 }
 
 .footer-contact .name {
-        color: #353433;
-        font-size: 1.5em;
-        font-weight: bold;
-        line-height: 1.2;
-        text-transform: uppercase;
+	color: #353433;
+	font-size: 1.5em;
+	font-weight: bold;
+	line-height: 1.2;
+	text-transform: uppercase;
 }
 
 .footer-contact .address {
-        color: #7C7C7C;
-        line-height: 1.2;
+	color: #7C7C7C;
+	line-height: 1.2;
 }
 
 .footer-contact .phone {
-        color: #464646;
+	color: #464646;
 }
 
 .footer-contact .contact a {
-        font-weight: bold;
-        text-transform: uppercase;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .footer-links {
-        float: right;
-        padding-bottom: 5px;
-        border-bottom: 1px solid #d9d9d9;
+	float: right;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #d9d9d9;
 }
 
 .footer-links ul.menu li {
-        list-style: none;
-        display: inline;
-        margin: 0;
-        padding: 0;
+	list-style: none;
+	display: inline;
+	margin: 0;
+	padding: 0;
 }
 
 .footer-links ul.menu li.first {
-        margin-left: 0;
+	margin-left: 0;
 }
 
 .footer-links a {
-        color: #767777;
-        font-weight: bold;
-        display: inline-block;
-        padding: 5px 0 8px 12px;
+	color: #767777;
+	font-weight: bold;
+	display: inline-block;
+	padding: 5px 0 8px 12px;
 }
 
 .footer-links li.first a {
-        padding-left: 0;
+	padding-left: 0;
 }
 
 .footer-links a.active-trail, .footer-links a.active {
-        color: #ccc;
+	color: #ccc;
 }
 
 .footer-social {
-        padding-top: 20px;
-        float: right;
+	padding-top: 20px;
+	float: right;
 }
 
 .footer-social ul {
@@ -575,18 +575,18 @@ div.view-content:after
 }
 
 .footer-social li {
-        float: left;
-        padding-left: 10px;
-        font-size: 0.8em;
-        color: #ccc;
-        line-height: 1.6;
-        font-weight: bold;
-        text-transform: uppercase;
-        vertical-align: middle;
+	float: left;
+	padding-left: 10px;
+	font-size: 0.8em;
+	color: #ccc;
+	line-height: 1.6;
+	font-weight: bold;
+	text-transform: uppercase;
+	vertical-align: middle;
 }
 
 .footer-social li img {
-        display: block;
+	display: block;
 }
 
 /* ### END Footer ### */
@@ -594,39 +594,39 @@ div.view-content:after
 /* ### BEGIN Staff Directory Styles ### */
 
 #staff-profile {
-        background: url(../images/staff-bg.jpg) no-repeat 0 0;
+	background: url(../images/staff-bg.jpg) no-repeat 0 0;
 	padding: 30px;
 }
 
 #staff-profile .node-staff {
-        background: url(../images/black-60.png);
-        color: #fff;
-        padding: 30px;
-        width: 75%; 
-        margin: 0 auto;
+	background: url(../images/black-60.png);
+	color: #fff;
+	padding: 30px;
+	width: 75%; 
+	margin: 0 auto;
 }
 
 #staff-profile .node-staff .group-left {
-        margin-right: 20px; 
-        width: auto;
+	margin-right: 20px; 
+	width: auto;
 }
 
 #staff-profile .node-staff .group-right {
-        width: 48%;  
+	width: 48%;  
 }
 
 #staff-profile .node-staff .field-name-field-staff-position .field-label {
-        color: #c5c5c5;
-        font-weight: normal;
-        text-transform: uppercase;
+	color: #c5c5c5;
+	font-weight: normal;
+	text-transform: uppercase;
 }
 
 .node-type-staff .field-name-field-description {
-        margin-top: 10px;
+	margin-top: 10px;
 }
 
 .node-type-staff #block-views-staff-directory-block-1 {
-        margin-top: 30px;
+	margin-top: 30px;
 }
 
 /* ### END Staff Directory Styles ### */
@@ -642,8 +642,8 @@ div.view-content:after
 .node-sermon .field-name-field-sermon-preacher,
 .node-sermon .field-name-field-scripture
  {
-        font-weight: bold;
-        margin-bottom: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
 }
 
 /* ### END Field styles ### */
@@ -657,8 +657,8 @@ div.view-content:after
 
 .page-calendar ul.primary {
 	line-height: normal;
-        margin: 5px 5px 20px 5px;  
-        padding: 0 0 10px 13px;; 
+	margin: 5px 5px 20px 5px;  
+	padding: 0 0 10px 13px;; 
 }
 
 .page-calendar ul.primary li {
@@ -666,18 +666,18 @@ div.view-content:after
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
 	border-radius: 0;
-        border-right: 1px solid #ccc; 
+	border-right: 1px solid #ccc; 
 	margin: 0;
-        display: inline;  
-        padding: 0 15px;
+	display: inline;  
+	padding: 0 15px;
 }
 
 .page-calendar ul.primary li:last-child {
-        border-right: none;
+	border-right: none;
 }
 
 .page-calendar ul.primary li a {
-        background: none; 
+	background: none; 
 	color: #000;
 	letter-spacing: normal;
 }
@@ -687,14 +687,14 @@ div.view-content:after
 }
 
 .page-calendar ul.primary a {
-        border: 0;
+	border: 0;
 	margin-right: 0.5em;
-        padding: 0; 
+	padding: 0; 
 	line-height: normal;
 }
 
 .page-calendar ul.primary a.active {
-        border-bottom: 4px solid #999; 
+	border-bottom: 4px solid #999; 
 }
 
 /* ### END Calendar Tabs ### */
@@ -729,12 +729,12 @@ div.view-content:after
 }
 
 .welcome-message {
-        color: #456884;
-        float: left;
-        font-size: 1.2em;
-        letter-spacing: -1px;
-        line-height: 1.2;
-        padding-top: 1px;
+	color: #456884;
+	float: left;
+	font-size: 1.2em;
+	letter-spacing: -1px;
+	line-height: 1.2;
+	padding-top: 1px;
 }
 
 /* ### END Front Page Styles ### */
@@ -742,41 +742,41 @@ div.view-content:after
 /* ### BEGIN Front Page Highlights ### */
 
 #highlighted h2.pane-title {
-        margin-left: 0;
+	margin-left: 0;
 }
 
 #highlighted .views-row {
-        margin-left: 0;
+	margin-left: 0;
 }
 
 #mini-panel-highlights .inside {
-        border-left: 1px dotted #DADCDC;
-        padding-right: 10px;
-        padding-left: 20px;
-        margin: 0;
+	border-left: 1px dotted #DADCDC;
+	padding-right: 10px;
+	padding-left: 20px;
+	margin: 0;
 }
 
 #mini-panel-highlights .panel-col-first .inside {
-        border-left: none;
-        padding-left: 0;
+	border-left: none;
+	padding-left: 0;
 }
 
 #mini-panel-highlights .panel-col-last .inside {
-        padding-right: 0;
+	padding-right: 0;
 }
 
 #mini-panel-highlights .panel-separator {
-        margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 /* ### END Front Page Highlights ### */
 
 .block-google-map .map-footer {
-        font-size: 0.9em;
+	font-size: 0.9em;
 }
 
 .block-google-map {
-        margin-top: 20px;
+	margin-top: 20px;
 }
 
 #rss-feed ul {
@@ -784,21 +784,21 @@ div.view-content:after
 }
 
 li.feed-icon, li.feed-text {
-        float: left;
-        font-size: .8em;
-        font-weight: bold;
-        line-height: 1.6;
-        text-transform: uppercase;
-        vertical-align: middle;
+	float: left;
+	font-size: .8em;
+	font-weight: bold;
+	line-height: 1.6;
+	text-transform: uppercase;
+	vertical-align: middle;
 }
 
 li.feed-text {
-        padding-left: 5px;
-        padding-right: 15px;
+	padding-left: 5px;
+	padding-right: 15px;
 }
 
 li.feed-icon img {
-        display: block;
+	display: block;
 }
 
 .flowplayer {

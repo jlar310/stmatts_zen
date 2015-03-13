@@ -158,13 +158,13 @@ a:link, a:visited {
 }
 
 a:hover {
-        color: #007EE4;
-        text-decoration: none;
+	color: #007EE4;
+	text-decoration: none;
 }
 
 a:active,li a:active {
-        color: inherit !important;
-        text-decoration: none;
+	color: inherit !important;
+	text-decoration: none;
 }
 
 /* Address `outline` inconsistency between Chrome and other browsers. */
@@ -190,16 +190,16 @@ a:hover {
 
 p, h1, h2, h3, h4, h6, blockquote {
 	margin-top: 0;
-        margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 p:last-child, blockquote:last-child {
-        margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 blockquote {
-        margin-left: 40px;
-        margin-right: 40px;
+	margin-left: 40px;
+	margin-right: 40px;
 }
 
 /**
@@ -215,20 +215,20 @@ h1 {
 	margin-bottom: 0.75em;
 }
 h2 {
-        color: #72ABD8;
-        font-size: 1.6em;
-        font-weight: normal;
-        font-style: normal;
+	color: #72ABD8;
+	font-size: 1.6em;
+	font-weight: normal;
+	font-style: normal;
 }
 h3 {
-        color: #5E8FB7;
-        font-size: 1.6em;
-        font-weight: normal;
+	color: #5E8FB7;
+	font-size: 1.6em;
+	font-weight: normal;
 }
 h4 {
-        color: #66665C;
-        font-size: 1.1em;
-        font-weight: normal;
+	color: #66665C;
+	font-size: 1.1em;
+	font-weight: normal;
 }
 h5 {
 	font-size: 0.83em;
@@ -237,9 +237,9 @@ h5 {
 	margin-bottom: 1.80723em;
 }
 h6 {
-        color: #5E8FB7;
-        font-size: 1.2em;
-        font-weight: normal;
+	color: #5E8FB7;
+	font-size: 1.2em;
+	font-weight: normal;
 }
 
 /* Address styling not present in IE 8/9, Safari 5, and Chrome. */

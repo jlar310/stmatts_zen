@@ -12,23 +12,23 @@ ul.pager,
 }
 
 .calendar-calendar .month-view .full td.date-box.today {
-  border-width: 1px 1px 0px 1px;
-  border-style: solid;
-  border-color: #CCC;
+	border-width: 1px 1px 0px 1px;
+	border-style: solid;
+	border-color: #CCC;
 }
 
 
 .calendar-calendar .month-view .full tr td.today,
 .calendar-calendar .month-view .full tr.odd td.today,
 .calendar-calendar .month-view .full tr.even td.today {
-  background: none;
-  border-left: 1px solid #CCC;
-  border-right: 1px solid #CCC;
+	background: none;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
 }
 
 
 .calendar-calendar .month-view .full tr td.single-day.today {
-  border-bottom: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
 }
 
 .calendar-calendar .month-view .full td.multi-day div.monthview,
@@ -39,9 +39,9 @@ ul.pager,
 }
 
 .calendar-calendar div.calendar {
-  border: none;
-  font-size: small;
-  line-height: 1.6; 
+	border: none;
+	font-size: small;
+	line-height: 1.6; 
 }
 
 .calendar-calendar .month-view .full td.multi-day .inner .monthview .continues,
@@ -55,7 +55,7 @@ ul.pager,
 
 
 .calendar-calendar .month-view .full td.multi-day  .inner .monthview .continuation,
-.calendar-calendar .week-view .full td.multi-day  .inner .weekview .continuation {
+.calendar-calendar .week-view .full td.multi-day	.inner .weekview .continuation {
 	float:left;
 	background: transparent;
 	margin-right: 3px;
@@ -65,8 +65,8 @@ ul.pager,
 
 .calendar-calendar .month-view .full tr.multi-day,
 .calendar-calendar .month-view .full tr.multi-day td {
-  height: auto;
-  max-height: 19px;
+	height: auto;
+	max-height: 19px;
 }
 
 .calendar-calendar .month-view .full td.multi-day .calendar.monthview .contents,
@@ -78,7 +78,7 @@ ul.pager,
 .calendar-calendar .month-view .full td.single-day div.monthview,
 .calendar-calendar .week-view .full td.single-day div.weekview,
 .calendar-calendar .day-view .full td.single-day div.dayview {
-  border: 1px solid #888;
+	border: 1px solid #888;
 }
 
 .calendar-calendar .month-view .full td.multi-day .inner .monthview a,
