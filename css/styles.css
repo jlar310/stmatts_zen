@@ -805,4 +805,16 @@ li.feed-icon img {
 	width: 600px;
 }
 
+.blog-post-content .field-name-body,
+.node-blog .field-name-body
+ {
+	margin-top: 15px;
+}
 
+.blog-post-content {
+	margin-top: 30px;*/
+}
+
+.node-blog .links {
+	display: none;
+}
