@@ -265,11 +265,11 @@
 
 /* ### END Exposed Form Sidebar ### */
 
-#block-views-archive-blog-block ul.views-summary {
+#block-views-blog-posts-archive-block ul.views-summary {
 	list-style: none;
 }
 
-#block-views-archive-blog-block ul.views-summary li {
+#block-views-blog-posts-archive-block ul.views-summary li {
 	margin-bottom: 5px;
 }
 

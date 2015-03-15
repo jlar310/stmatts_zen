@@ -815,6 +815,11 @@ li.feed-icon img {
 	margin-top: 30px;*/
 }
 
-.node-blog .links {
+.node-blog .links .blog_usernames_blog {
 	display: none;
+}
+
+.node-blog .links {
+	font-size: 1.1em;
+	font-weight: bold;
 }
