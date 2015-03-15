@@ -231,7 +231,9 @@ function stmatts_zen_breadcrumb($variables) {
           $breadcrumb[] .= l('Events', 'events');
         } elseif (preg_match('%^/events%', $uri)) {
           $breadcrumb = array_slice($breadcrumb, 0, 1);
-        }
+        } elseif (preg_match('%^/blog/%', $uri)) {
+	  unset($breadcrumb[2]);
+	}
 
         if ($title) {
           $trailing_separator = $breadcrumb_separator;
