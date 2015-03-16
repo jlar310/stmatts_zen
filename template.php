@@ -229,7 +229,7 @@ function stmatts_zen_breadcrumb($variables) {
         } elseif (preg_match('%^/events/search%', $uri)) {
           $breadcrumb = array_slice($breadcrumb, 0, 1);
           $breadcrumb[] .= l('Events', 'events');
-        } elseif (preg_match('%^/events%', $uri)) {
+        } elseif (preg_match('%^/events/?$%', $uri)) {
           $breadcrumb = array_slice($breadcrumb, 0, 1);
 	}
 
