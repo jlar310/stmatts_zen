@@ -21,15 +21,30 @@
  * @ingroup views_templates
  */
 ?>
-<?php //dsm($fields); ?>
+<?php //dpm($variables); ?>
+<?php //dpm($view->result[$view->row_index]->nid); ?>
+<?php 
+  $nid = $view->result[$view->row_index]->nid;
+  $node = node_load($nid);
+  //dpm($node);
+  if ($node->type == "tidings_link") {
+    $icon = "logo-empty.png";
+  } else {
+    $icon = "blog-view-icon.jpg";
+  }
+?>
 <div class="vr-left">
   <div class="vr-square">
-    <?php print '<div class="field-content"><img src="' . $directory . '/images/logo-empty.png" width="22" height="22" /></div>'; ?>
+    <?php print '<img src="' . $directory . '/images/' . $icon . '" width="22" height="22" />'; ?>
   </div>
 </div>
 <div class="vr-center vr-length-2">
   <div class="vr-first">
-    <?php print $fields['title']->content; ?>
+    <?php if ($fields['field_link']->content): ?>
+      <?php print $fields['field_link']->content; ?>
+    <?php else: ?>
+      <?php print $fields['title']->content; ?>
+    <?php endif; ?>
   </div>
   <div class="vr-second">
     <?php print $fields['field_date']->content; ?>
