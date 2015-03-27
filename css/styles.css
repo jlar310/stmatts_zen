@@ -741,32 +741,53 @@ div.view-content:after
 
 /* ### BEGIN Front Page Highlights ### */
 
-#highlighted h2.pane-title {
-	margin-left: 0;
-}
-
 #highlighted .views-row {
-	margin-left: 0;
+	margin-left: 0; 
 }
 
-#mini-panel-highlights .inside {
-	border-left: 1px dotted #DADCDC;
-	padding-right: 10px;
-	padding-left: 20px;
-	margin: 0;
+#highlighted h2.block-title,
+#highlighted h2.pane-title {
+	margin-left: 0; 
 }
 
-#mini-panel-highlights .panel-col-first .inside {
-	border-left: none;
-	padding-left: 0;
+
+#mini-panel-highlights .panel-col-top {
+	padding-bottom: 20px; 
 }
 
-#mini-panel-highlights .panel-col-last .inside {
-	padding-right: 0;
+#mini-panel-highlights .panel-col-top .inside {
+	margin-bottom: 0;
+        padding-bottom: 20px;
+        border-bottom: 1px dotted #dadcdc;
 }
 
-#mini-panel-highlights .panel-separator {
-	margin-bottom: 20px;
+#mini-panel-highlights .center-wrapper .inside {
+	border-left: 1px dotted #DADCDC; 
+	padding-right: 10px; 
+	padding-left: 20px; 
+	margin: 0; 
+}
+
+#mini-panel-highlights .center-wrapper .panel-col-first .inside {
+	border-left: none; 
+	padding-left: 0; 
+}
+
+#mini-panel-highlights .center-wrapper .panel-col-last .inside {
+	padding-right: 0; 
+}
+
+#mini-panel-highlights .panel-col-bottom {
+	padding-top: 20px;
+}
+
+#mini-panel-highlights .panel-col-bottom .inside {
+	border-top: 1px dotted #dadcdc; 
+	padding-top: 20px; 
+}
+
+#mini-panel-highlights #node-57 div.field-item h6:first-child {
+	font-weight: bold;
 }
 
 /* ### END Front Page Highlights ### */
@@ -802,6 +823,10 @@ li.feed-icon img {
 }
 
 .flowplayer {
+	width: 600px;
+}
+
+.field-name-field-audio-file .field-items object {
 	width: 600px;
 }
 

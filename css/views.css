@@ -277,12 +277,6 @@
 	border-top: 5px solid #656565;
 }
 
-.view-random-quote {
-	padding-bottom: 20px;
-	margin-bottom: 20px; 
-	border-bottom: 1px dotted #dadcdc;
-}
-
 .view-random-quote .view-content {
 	padding-left: 50px;
 	background: url(../images/quote_l.png) no-repeat top left; 
