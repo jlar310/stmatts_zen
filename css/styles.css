@@ -454,6 +454,12 @@ div.view-content:after
 	float: right;
 }
 
+/* No box-shadow for inline images in body */
+.field-name-body img {
+	border: none;
+        -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+}
+
 /* ### END Article Images ### */
 
 /* ### BEGIN Right Sidebar menu style ### */
