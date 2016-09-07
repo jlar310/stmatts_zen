@@ -252,6 +252,11 @@ div.view-content:after
 	background: url(../images/wordpress-blue.png) no-repeat;
 }
 
+.header-icons li#header-icon-city {
+	background: url(../images/city_logo_48.png) no-repeat;
+	background-size: 24px 24px;
+}
+
 /* make the clickable link area the full size of background image */
 .header-icons li a {
 	height: 100%;
