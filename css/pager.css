@@ -192,8 +192,6 @@
 	position: absolute;
 	right: 0px;
 	bottom: 0px;
-/*
-*/
 	padding-right: 30px;
 	height: 50px; 
 	overflow: hidden;
@@ -211,6 +209,19 @@
 .views-slideshow-pager-field-item:hover {
 	opacity: 1;
 	margin: 0;
+}
+
+.views-slideshow-pager-fields img {
+	max-width: inherit;
+	max-height: inherit;
+}
+
+.views-slideshow-pager-fields .active img {
+	border: none;
+}
+
+.views-slideshow-pager-fields > div {
+	padding-left: 0;
 }
 
 /* ### END Slideshow Thumbnail Pager ### */
