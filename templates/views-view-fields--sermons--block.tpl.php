@@ -32,6 +32,6 @@
     <?php print $fields['title']->content; ?>
   </div>
   <div class="vr-second">
-    <?php print $fields['field_date']->content; ?>
+    <?php print $fields['field_sermon_preacher']->content; ?>
   </div>
 </div>

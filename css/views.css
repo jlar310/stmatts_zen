@@ -82,6 +82,11 @@
 	color: #515151;
 }
 
+.vr-third {
+	font-size: 120%;
+	color: #515151;
+}
+
 .block-views .vr-second, .pane-block .vr-second {
 	line-height: 1.2;
 }
