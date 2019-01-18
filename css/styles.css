@@ -257,6 +257,11 @@ div.view-content:after
 	background-size: 24px 24px;
 }
 
+.header-icons li#header-icon-ccb {
+	background: url(../images/ccb_logo_48.png) no-repeat;
+	background-size: 24px 24px;
+}
+
 /* make the clickable link area the full size of background image */
 .header-icons li a {
 	height: 100%;
@@ -598,6 +603,7 @@ div.view-content:after
 
 .footer-social li img {
 	display: block;
+	border: 1px solid #ccc;
 }
 
 /* ### END Footer ### */
